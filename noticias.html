@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muerte a la buena pizza | Noticias</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilombp.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-monotone sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold text-red" href="inicio.html">
+            <img src="imagenes/jajaaj.jpg" width="250" height="75" alt="Logo Pizza" class="logo-menu me-2">
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex mx-auto my-3 my-lg-0 search-container">
+                <input class="form-control search-input" type="search" placeholder="Buscar noticia..." aria-label="Search">
+                <button class="btn btn-outline-red" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+            </form>
+
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item"><a class="nav-link" href="inicio.html">INICIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="quienessomos.html">QUIENES SOMOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="pizzas.html">PIZZAS</a></li>
+                <li class="nav-item"><a class="nav-link active" href="noticias.html">NOTICIAS</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactos.html">CONTACTOS</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="carouselInicio" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="carousel-overlay"></div>
+            <img src="imagenes/margarita.jpg" alt="Pizza 1">
+            <div class="carousel-caption">
+                <h2 class="fw-bold">EL FUEGO ETERNO</h2>
+                <p class="fs-4">Nacidos para cocinar, destinados a destruir el mal sabor.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="carousel-overlay"></div>
+            <img src="imagenes/queso.webp" alt="Pizza 2">
+            <div class="carousel-caption">
+                <h2 class="fw-bold">LA LEY DEL QUESO</h2>
+                <p class="fs-4">Ingredientes criminalmente frescos.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<section class="catalogo-mbp py-5">
+    <div class="container">
+        <div class="pi-titulo mb-5">
+            <h2 class="text-red display-5 fw-bold">BOLETÍN CRIMINAL</h2>
+            <h3 class="text-light text-uppercase">Noticias y ofertas de último minuto</h3>
+        </div>
+
+        <div class="phpi-control-desktop d-flex gap-4 overflow-auto pb-4">
+            
+            <div class="producto-item shadow-lg">
+                <div class="producto-item-descuento">-37%</div>
+                <div class="producto-item-imagen">
+                    <img src="imagenes/papaxl.webp" alt="Combo Papá XL">
+                </div>
+                <div class="producto-item-detalle p-3">
+                    <h3 class="text-red h5">Combo Papá XL</h3>
+                    <p class="small text-light opacity-75">1 Pizza XL (16 porciones) + 1 Gaseosa 1.5 LT + Pepperoni Rolls...</p>
+                    <div class="producto-item-precios">
+                        <span class="fs-4 fw-bold">169,00 BS</span>
+                        <span class="text-decoration-line-through text-muted ms-2">269,00 BS</span>
+                    </div>
+                    <button class="btn btn-red-mbp w-100 mt-3">PERSONALIZAR</button>
+                </div>
+            </div>
+
+            <div class="producto-item shadow-lg">
+                <div class="producto-item-imagen">
+                    <img src="imagenes/comboverde.webp" alt="Combo La Verde">
+                </div>
+                <div class="producto-item-detalle p-3">
+                    <h3 class="text-red h5">Combo La Verde</h3>
+                    <p class="small text-light opacity-75">1 Pizza familiar clásica + 1 Coca-Cola 1.5lt + Termo Futbolero</p>
+                    <div class="producto-item-precios">
+                        <span class="fs-4 fw-bold">129,00 BS</span>
+                    </div>
+                    <button class="btn btn-red-mbp w-100 mt-3">PERSONALIZAR</button>
+                </div>
+            </div>
+
+            <div class="producto-item shadow-lg">
+                <div class="producto-item-imagen">
+                    <img src="imagenes/combo-premium-final_1.webp" alt="Combo Premium">
+                </div>
+                <div class="producto-item-detalle p-3">
+                    <h3 class="text-red h5">Combo Premium</h3>
+                    <p class="small text-light opacity-75">1 Pizza Premium Suprema + 2 gaseosas 300ml</p>
+                    <div class="producto-item-precios">
+                        <span class="fs-4 fw-bold">109,00 BS</span>
+                        <span class="text-decoration-line-through text-muted ms-2">127,00 BS</span>
+                    </div>
+                    <button class="btn btn-red-mbp w-100 mt-3">PERSONALIZAR</button>
+                </div>
+            </div>
+
+            <div class="producto-item shadow-lg">
+                <div class="producto-item-descuento">NUEVO</div>
+                <div class="producto-item-imagen">
+                    <img src="imagenes/combo-xl.webp"Atraco de Pepperoni">
+                </div>
+                <div class="producto-item-detalle p-3">
+                    <h3 class="text-red h5">Atraco de Pepperoni</h3>
+                    <p class="small text-light opacity-75">Nuestra pizza más vendida ahora con bordes de queso criminal.</p>
+                    <div class="producto-item-precios">
+                        <span class="fs-4 fw-bold">99,00 BS</span>
+                    </div>
+                    <button class="btn btn-red-mbp w-100 mt-3">VER DETALLES</button>
+                </div>
+            </div>
+
+            <div class="producto-item shadow-lg">
+                <div class="producto-item-imagen">
+                    <img src="imagenes/combo-picante_hut.webp" alt="Noche de Sentencia">
+                </div>
+                <div class="producto-item-detalle p-3">
+                    <h3 class="text-red h5">Noche de Sentencia</h3>
+                    <p class="small text-light opacity-75">Todos los jueves: 2x1 en pizzas clásicas retirando en guarida.</p>
+                    <div class="producto-item-precios">
+                        <span class="fs-4 fw-bold text-red">PROMO ACTIVA</span>
+                    </div>
+                    <button class="btn btn-red-mbp w-100 mt-3">UBICAR SEDE</button>
+                </div>
+            </div>
+
+            <a href="#" class="phpi-extra-productos d-flex align-items-center justify-content-center text-decoration-none">
+                <div class="text-center">
+                    <p class="text-light m-0">Ver más</p>
+                    <h3 class="text-red fw-bold">NOTICIAS</h3>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-mbp py-5 mt-5">
+    <div class="container text-center text-md-start">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="footer-logo text-red">MUERTE A LA BUENA PIZZA</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-6 mb-4">
+                <h6 class="text-uppercase fw-bold text-light mb-3">Carta Suicida</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Pizzas de Autor</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Bebidas</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <h6 class="text-uppercase fw-bold text-light mb-3">Servicios</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Preguntas</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <h6 class="text-uppercase fw-bold text-light mb-3">Nuestras Guaridas</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Sedes</a></li>
+                    <li><a href="#">Reservas</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <h6 class="text-uppercase fw-bold text-light mb-3">La Orden</h6>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="border-secondary my-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="small text-muted m-0">&copy; 2026 MUERTE A LA BUENA PIZZA.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                <a href="#" class="text-light me-3 small text-decoration-none">IG</a>
+                <a href="#" class="text-light me-3 small text-decoration-none">FB</a>
+                <a href="#" class="text-light small text-decoration-none">TK</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

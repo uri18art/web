@@ -1,0 +1,256 @@
+/* --- Configuración General del Tono Unificado (Sin cambios) --- */
+:root {
+    --bg-monotone: #111111; /* Plomo oscuro medio claro UNIFICADO */
+    --text-main: #ffffff;
+    --pizza-red: #ff3131;
+}
+
+body {
+    background-color: var(--bg-monotone);
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--text-main);
+}
+
+.bg-monotone {
+    background-color: var(--bg-monotone) !important;
+}
+
+/* --- Navbar (Sin cambios) --- */
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.514);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* --- ELIMINADOS LOS ESTILOS DE .logo-menu --- */
+/* La imagen ahora se muestra en su tamaño y aspecto nativo */
+
+/* --- CARRUSEL FULL SCREEN --- */
+.carousel-item {
+    height: 100vh; /* Ocupa el 100% del alto de la pantalla */
+    min-height: 500px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformar */
+}
+
+/* Capa oscura sobre las imágenes para que el texto resalte */
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.carousel-caption {
+    bottom: 20%;
+    z-index: 10;
+}
+
+.carousel-caption h2 {
+    font-size: 4rem;
+    text-shadow: 3px 3px 0px var(--pizza-red);
+}
+
+.text-red {
+    color: var(--pizza-red) !important;
+}
+
+.nav-link {
+    color: var(--text-main) !important;
+    text-transform: uppercase;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--pizza-red) !important;
+}
+
+.navbar-toggler {
+    border-color: var(--pizza-red);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 49, 49, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* --- Estilo del Buscador Central (Sin cambios) --- */
+.search-container {
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.search-input {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 49, 49, 0.3) !important;
+    border-radius: 0; 
+    color: white !important;
+    font-size: 0.9rem;
+    padding-left: 15px;
+    transition: 0.4s;
+}
+
+.search-input:focus {
+    border-color: var(--pizza-red) !important;
+    box-shadow: 0 0 10px rgba(255, 49, 49, 0.2);
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.btn-outline-red {
+    border: 1px solid var(--pizza-red);
+    color: var(--pizza-red);
+    border-radius: 0;
+    margin-left: -1px; 
+    transition: 0.3s;
+}
+
+.btn-outline-red:hover {
+    background-color: var(--pizza-red);
+    color: white;
+}
+
+/* --- Contenedor del GIF Full Width (Sin cambios) --- */
+.gif-banner-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.gif-full-width {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+.svg-wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+/* --- ADAPTACIÓN CATÁLOGO PRODUCTOS --- */
+.catalogo-mbp {
+    background-color: var(--bg-monotone);
+}
+
+.producto-item {
+    min-width: 280px;
+    max-width: 280px;
+    background-color: #2a2a2a; /* Un tono un poco más claro que el fondo para que resalte */
+    border: 1px solid rgba(255, 49, 49, 0.2);
+    border-radius: 0;
+    overflow: hidden;
+    flex-shrink: 0; /* Evita que se aplasten */
+}
+
+.producto-item-imagen img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto-item-descuento {
+    position: absolute;
+    background-color: var(--pizza-red);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.btn-red-mbp {
+    background-color: var(--pizza-red);
+    color: white;
+    border-radius: 0;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-red-mbp:hover {
+    background-color: #b30000;
+    color: white;
+}
+
+/* Tarjeta Extra (Ver Más) */
+.phpi-extra-productos {
+    min-width: 280px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('https://pizzahut.com.bo/cdn/shop/files/imagen-auxiliar-uso1.jpg?v=1762435289&width=1600');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid var(--pizza-red);
+    transition: 0.3s;
+}
+
+.phpi-extra-productos:hover {
+    transform: scale(1.02);
+}
+
+/* Scrollbar personalizado para que no se vea feo */
+.phpi-control-desktop::-webkit-scrollbar {
+    height: 8px;
+}
+.phpi-control-desktop::-webkit-scrollbar-thumb {
+    background: var(--pizza-red);
+    border-radius: 10px;
+}
+.phpi-control-desktop::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+/* --- Sección Filosofía (Sin cambios) --- */
+.shadow-custom {
+    box-shadow: 8px 8px 0px var(--pizza-red);
+}
+
+/* --- Estilo Footer Premium (Sin cambios) --- */
+.footer-mbp {
+    background-color: var(--bg-monotone);
+    border-top: 1px solid rgba(255, 49, 49, 0.2);
+}
+
+.footer-logo {
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.footer-mbp h6 {
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--pizza-red);
+    padding-left: 5px;
+}
+
+hr.border-secondary {
+    opacity: 0.1;
+}
+
+.footer-mbp .text-muted {
+    font-size: 0.75rem;
+}
